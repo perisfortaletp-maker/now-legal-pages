@@ -39,6 +39,7 @@
       <nav aria-label="Page navigation">
         <a href="#en">English</a><a href="#es">Español</a>
         <a href="privacy.html">Privacy / Privacidad</a><a href="support.html">Support / Soporte</a>
+        <a href="account-deletion.html">Account deletion / Eliminación de cuenta</a>
       </nav>
     </div>
   </header>
@@ -70,8 +71,8 @@
       <p><strong>Owner review before publication:</strong> confirm that production products are configured as monthly and annual auto-renewing subscriptions, then replace this general wording with the exact store-displayed prices, billing details, cancellation guidance, and any trial or introductory-offer terms. Do not publish claims that do not match the live products.</p>
       <p>RevenueCat supports entitlement and purchase-status handling for the app. Purchases are made through the relevant store; the precise payment, cancellation, and refund terms are governed by the applicable store and law.</p>
 
-      <h3>Information and local data</h3>
-      <p>NOW currently has no user account sign-in. Planner and profile information is stored locally as described in the <a href="privacy.html">Privacy Policy</a>. Some records can be deleted individually and profile information can be cleared, but the app does not currently provide a single delete-all control or account-deletion function.</p>
+      <h3>Accounts and local data</h3>
+      <p>NOW provides email-and-password sign-up and sign-in through Clerk. New sign-ups use an email verification code, and password reset uses an email code. Planner and profile information is stored locally as described in the <a href="privacy.html">Privacy Policy</a>. In Settings, a signed-in user can confirm “Delete my NOW account.” NOW uses the verified Clerk session to delete the same Clerk account and its account-scoped AI rate-limit record; after the server confirms, the app clears eligible account data from this device, including any recovery copy explicitly assigned to that account. Unassigned or differently assigned legacy recovery data is preserved. If the server cannot confirm deletion, local planner data is not cleared. If local cleanup fails after the server confirms account deletion, the app reports that it could not confirm local cleanup. Account deletion does not cancel an Apple or Google subscription or erase data held by other devices, OpenAI, RevenueCat, or a store. See the <a href="account-deletion.html">account-deletion request instructions</a> if you cannot sign in.</p>
 
       <h3>Items requiring owner and legal review</h3>
       <p>The app owner must supply the legal operator’s name, applicable country and governing law, age eligibility, how acceptance of these terms will be recorded, and any required rules on service availability, user content, intellectual property, termination, and liability. These terms do not invent those details.</p>
@@ -101,8 +102,8 @@
       <p><strong>Revisión del responsable antes de publicar:</strong> confirma que los productos de producción estén configurados como suscripciones mensuales y anuales con renovación automática. Después, sustituye este texto general por los precios, detalles de facturación, instrucciones de cancelación y condiciones de pruebas o promociones que muestre la tienda. No publiques afirmaciones que no coincidan con los productos activos.</p>
       <p>RevenueCat facilita la gestión de derechos de acceso y del estado de compra en la aplicación. Las compras se realizan mediante la tienda correspondiente; las condiciones exactas de pago, cancelación y reembolso se rigen por la tienda aplicable y la legislación correspondiente.</p>
 
-      <h3>Información y datos locales</h3>
-      <p>NOW actualmente no tiene inicio de sesión de usuario. La información del planificador y del perfil se guarda localmente, tal como se describe en la <a href="privacy.html">Política de privacidad</a>. Se pueden borrar algunos registros individualmente y limpiar la información del perfil, pero actualmente la aplicación no ofrece un control único para borrar todos los datos ni una función de eliminación de cuenta.</p>
+      <h3>Cuentas y datos locales</h3>
+      <p>NOW permite registrarse e iniciar sesión con correo electrónico y contraseña mediante Clerk. Los registros nuevos usan un código de verificación por correo, y el restablecimiento de contraseña también usa un código por correo. La información del planificador y del perfil se guarda localmente, tal como se describe en la <a href="privacy.html">Política de privacidad</a>. En Ajustes, el usuario que inició sesión puede confirmar «Eliminar mi cuenta de NOW». NOW usa la sesión Clerk verificada para eliminar esa misma cuenta Clerk y su registro individual de límites de IA; después de que el servidor lo confirme, la aplicación borra los datos válidos de esa cuenta en este dispositivo, incluida cualquier copia de recuperación asignada expresamente a ella. Se conservan los datos antiguos sin asignar o asignados a otra cuenta. Si el servidor no puede confirmar la eliminación, los datos locales del planificador no se borran. Si falla la limpieza local después de que el servidor confirme la eliminación de la cuenta, la aplicación informa que no pudo confirmarla. Eliminar la cuenta no cancela una suscripción de Apple o Google ni borra datos que tengan otros dispositivos, OpenAI, RevenueCat o una tienda. Consulta las <a href="account-deletion.html">instrucciones para solicitar la eliminación</a> si no puedes iniciar sesión.</p>
 
       <h3>Aspectos que requieren revisión del responsable y asesoría jurídica</h3>
       <p>El responsable de la aplicación debe proporcionar el nombre del operador legal, el país y la legislación aplicable, la edad mínima, cómo se registrará la aceptación de estas condiciones y las reglas necesarias sobre disponibilidad del servicio, contenido del usuario, propiedad intelectual, terminación y responsabilidad. Estas condiciones no inventan esos datos.</p>
@@ -110,7 +111,7 @@
     </article>
 
     <footer>
-      <a href="privacy.html">Privacy / Privacidad</a> · <a href="support.html">Support / Soporte</a>
+      <a href="privacy.html">Privacy / Privacidad</a> · <a href="support.html">Support / Soporte</a> · <a href="account-deletion.html">Account deletion / Eliminación de cuenta</a>
     </footer>
   </main>
 </body>
